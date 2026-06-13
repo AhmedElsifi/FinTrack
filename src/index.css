@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Font */
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Weights */
+.jetbrains-mono-thin {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 100;
+}
+
+.jetbrains-mono-extra-light {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 200;
+}
+
+.jetbrains-mono-light {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 300;
+}
+
+.jetbrains-mono-regular {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 400;
+}
+
+.jetbrains-mono-medium {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
+}
+
+.jetbrains-mono-semi-bold {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 600;
+}
+
+.jetbrains-mono-bold {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+}
+
+.jetbrains-mono-extra-bold {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+}
+
+/* Italics */
+.jetbrains-mono-italic {
+  font-family: "JetBrains Mono", monospace;
+  font-style: italic;
+}
+
+.jetbrains-mono-bold-italic {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+:root {
+  /* Main Font */
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Neutral Scale */
+  --neutral-900: #0a0a0a;
+  --neutral-800: #283300;
+  --neutral-700: #171719;
+  --neutral-600: #202022;
+  --neutral-500: #2e2e2e;
+  --neutral-400: #3d3d3d;
+  --neutral-300: #454547;
+  --neutral-200: #69696b;
+  --neutral-100: #c6c6c6;
+  --neutral-50: #ffffff;
+
+  /* Accent / Lime */
+  --lime-500: #cef739;
+  --lime-800: #283300;
+
+  /* Success / Profit */
+  --green-500: #42eb05;
+
+  /* Error / Loss */
+  --red-500: #ff4141;
+}
+
+body {
+  font-family: var(--font-mono);
+  margin: 0;
+  background-color: var(--neutral-900);
+  color: var(--neutral-200);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 2px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--lime-800);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--lime-500);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--lime-500);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+  background: var(--lime-800);
+}
+
+select::-webkit-scrollbar-thumb {
+  background: var(--lime-500);
+  border-radius: 10px;
+}
+
+select::-webkit-scrollbar {
+  height: 2px;
+  width: 2px;
+}
